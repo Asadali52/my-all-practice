@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-block</title>
+    <style>
+        .a{
+            display: inline; /*by default span */
+            width: 1100px;
+            height: 555px;
+            border: 3px solid red;
+            background-color: blue ;
+            padding: 5px;
+        }
+
+        .b{
+            display: inline-block;
+            width: 100px;
+            height: 55px;
+            border: 3px solid red;
+            background-color: blue ;
+            padding: 5px;
+        }
+
+        .c{
+            display: block;
+            width: 100px;
+            height: 55px;
+            border: 3px solid red;
+            background-color: blue ;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus non quasi cumque ad? Minima corporis totam <span class="a">exercitationem</span> sit tenetur. Quo sit ab culpa animi <span class="a">recusandae</span> soluta omnis dolorem ea.</div>
+
+    <hr>
+
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus non quasi cumque ad? Minima corporis totam <span class="b">exercitationem </span> sit tenetur. Quo sit ab culpa animi <span class="b">recusandae </span> soluta omnis dolorem ea.</div>
+
+    <hr>
+
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati possimus non quasi cumque ad? Minima corporis totam <span class="c">exercitationem</span> sit tenetur. Quo sit ab culpa animi <span class="c">recusandae</span> soluta omnis dolorem ea.</div>
+</body>
+</html>

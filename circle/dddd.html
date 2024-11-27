@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parent Rotate, Child Not Rotate with Circular Shape</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: teal;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .parent {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(66, 104, 104); 
+        /* border-radius: 50%;  */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 1s ease-in-out; /* Transition effect for rotation */
+    }
+
+    .child {
+        width: 100px;
+        height: 100px;
+        background-color: aliceblue;
+    }
+
+    .parent:hover {
+        transform: rotate(360deg);
+    }
+</style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">child</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class and elements 2</title>
+    <style>
+        a:hover{
+            color: gray;
+            background-color: lightgray;
+            border: 2px solid black;
+            font-size: 25px;
+        }
+
+        a:visited{
+            color: green;
+            background-color: black;
+        }
+
+        a:active{
+            color: aqua;
+            background-color: black;
+            font-size: large;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        ul li:first-child{
+            color: red;
+            font-weight: bolder;
+        }
+
+        ul li:last-child{
+            background-color: greenyellow;
+            color: green;
+            font-size: 20px;
+        }
+
+        ul li:nth-child(even){
+            color: blue;
+            font-size: 30px;
+
+        }
+
+
+        ol li:nth-child(5){
+            background-color: black;
+            color: rgb(20, 114, 114);
+        }
+
+        p::first-letter{
+            font-size: 40px;
+            color: red;
+        }
+
+
+        p::first-line{
+            color: green;
+            font-size: 30px;
+        }
+
+        ::selection{
+            background-color: blueviolet;
+        }
+
+        h1::before{
+            content: '***';
+            color: blue;
+        }
+
+        h1::after{
+            content: '***';
+            color: red;
+        }
+
+
+        li:nth-child(3){
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1>HEADING</h1>
+
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisiectetur adipisiectetur adipisiectetur adipisicing elit. Ab, itaque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, at repellat quasi maiores a qui earum. Ut numquam quae voluptatibus.</p>
+
+
+
+    <a href="#">Discover More</a>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+    </ul>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+    </ul>
+
+
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+        <li>eight</li>
+        <li>nine</li>
+        <li>ten</li>
+        <li>eleven</li>
+        <li>twelve</li>
+    </ol>
+</body>
+</html>

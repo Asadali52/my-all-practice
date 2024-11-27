@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text effect</title>
+    <style>
+        .para1{
+            width: 200px;
+            border: 1px solid black;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .clip{
+            text-overflow: clip;
+        }
+        .ellipsis{
+            text-overflow: ellipsis;
+        }
+        p:hover{
+            overflow: visible;
+        }
+        .para2{
+            width: 200px;
+            border: 1px solid red;
+            word-wrap: break-word;
+        }
+        .para3{
+            width: 200px;
+            border: 1px solid blue;
+            word-break: break-all;
+        }
+        .ver1{
+            writing-mode: vertical-lr;
+        }
+        .ver2{
+            writing-mode: vertical-rl;
+        }
+        .hor1{
+            writing-mode: horizontal-tb;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h2>text-overflow: Clip (with hover)</h2>
+    <p class="clip para1">This is some long text that will not fix in box.</p>
+
+    <h2>text-overflow: Ellipsis (with hover)</h2>
+    <p class="ellipsis para1">This is some long text that will not fix in box.</p>
+<hr>
+    <h1>The word wrap property</h1>
+    <p class="para2">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. 
+        The long word will break and wrap to the next line.</p>
+<hr>
+   <h2>Word Break property</h2>
+   <p class="para3">This paragraph contains some text. This line willbreaatlkjhgjkphens.</p>
+<hr>
+   <h1>Writing-mode property</h1>
+   <p class="para4">Lorem ipsum dolor sit, amet <span class="ver1">Lorem, ipsum dolor.</span>consectetur adipisicing elit. Ex aperiam culpa exercitationem <span class="ver2">Lorem ipsum dolor sit amet.</span> omnis et. Eaque ab <span class="hor1">Lorem ipsum dolor sit.</span>eius maiores voluptates quidem.</p>
+</body>
+</html>

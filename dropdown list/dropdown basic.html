@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown basis</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+            background-color: gray;
+            width: 100%;
+        }
+
+        .nav-link {
+            float: left;
+            padding: 10px 20px;
+        }
+
+        .nav-link > a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .nav-link>a:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 50px;
+            min-width: 100px;
+            background-color: #f9f9f9;
+            /* z-index: 1; */
+        } 
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-content a{
+            display: block;
+            padding: 10px 14px;
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            border: 1px solid black;
+            border-top: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="nav-links">
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#">About</a></li>
+        <li class="nav-link"><a href="#">Contact us</a></li>
+        <li class="nav-link"><a href="#">Menu</a></li>
+
+        <li class="nav-link dropdown"><a class="dropbtn" href="#">Dropdown</a>
+
+            <div class="dropdown-content">
+                <a href="#">Html</a>
+                <a href="#">Css</a>
+                <a href="#">Java</a>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

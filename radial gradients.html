@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial gradients</title>
+    <style>
+        main{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        div{
+            color: #fff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            height: 250px;
+            width: 250px;
+        }
+        .radial-g1{
+            background-image: radial-gradient(red, yellow, green, blue);
+        }
+        .radial-g2{
+            background-image: radial-gradient(green 5%, brown 50%, gray 100%);
+        }
+        .radial-g3{
+            background-image: radial-gradient(circle, blue, violet, lightgreen);
+        }
+        .radial-g4{
+            background-image: radial-gradient(closest-side at 50% 25%, red, yellow, black);
+        }
+        .radial-g5{
+            background-image: radial-gradient(farthest-side at 30% 40%, green, blue, yellow);
+        }
+        .radial-g6{
+            background-image: radial-gradient(closest-corner at 50% 50%, rgb(219, 158, 158), white, red);
+        }
+        .radial-g7{
+            background-image: radial-gradient(50% 50%, red, green, blue);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+    <div class="radial-g1">
+        <h1>This is radial gradients</h1>
+    </div>
+    <div class="radial-g2">
+        <h1>This is radial gradients</h1>
+    </div>
+    <div class="radial-g3">
+        <h1>This is radial gradients</h1>
+    </div>
+    <div class="radial-g4">
+        <h1>This is radial gradients</h1>
+    </div>
+    <div class="radial-g5">
+        <h1>This is radial gradients</h1>
+    </div>
+    <div class="radial-g6">
+        <h1>This is radial gradients</h1>
+    </div>
+    <div class="radial-g7">
+        <h1>This is radial gradients</h1>
+    </div>
+    <div class="radial-g8">
+        <h1>This is radial gradients</h1>
+    </div>
+    </main>
+</body>
+
+</html>

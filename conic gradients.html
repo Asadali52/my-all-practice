@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conic gradients</title>
+    <style>
+        main{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+        .conic-g1{
+            background-image: conic-gradient(red, green, blue, yellow,gray);
+        }
+        .conic-g2{
+            background-image: conic-gradient(red 45deg , green 90deg , yellow 210deg);
+        }
+        .conic-g3{
+            background-image: conic-gradient( red, green, blue, red)
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="conic-g1"><h5>This is conic gradients</h5></div>
+        <div class="conic-g2"><h5>This is conic gradients</h5></div>
+        <div class="conic-g3"><h5>This is conic gradients</h5></div>
+        <div class="conic-g4"><h5>This is conic gradients</h5></div>
+        <div class="conic-g5"><h5>This is conic gradients</h5></div>
+        <div class="conic-g6"><h5>This is conic gradients</h5></div>
+        <div class="conic-g7"><h5>This is conic gradients</h5></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* div {
+            border: 2px solid;
+        } */
+        #relative {
+            margin-left: 400px;
+            position: relative;
+            height: 50vh;
+            width: 50vh;
+            border: 2px solid black;
+            background-color: gray;
+        }
+
+        #relative>div {
+            position: absolute;
+            height: 30vh;
+            width: 30vh;
+            border: 1px solid gray;
+
+        }
+
+        #absolute {
+            background-color: aqua;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
+        }
+
+        #absolute1 {
+            background-color: red;
+            z-index: 1;
+        }
+
+        #absolute2 {
+            background-color: rgb(161, 84, 84);
+            z-index: 1;
+            left: 20px;
+            top: 20px;
+            z-index: 2;
+        }
+
+        #fixed {
+            position: fixed;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(189, 43, 226);
+            bottom: 100px;
+            right: 100px;
+        }
+
+        #spacer {
+            height: 150vh;
+        }
+
+        #sticky {
+            position: sticky;
+            background-color: rgb(88, 17, 255);
+            height: 100px;
+            width: 100px;
+            /* top: 0; */
+            top: 50px;
+
+        }
+
+        #sticky-container {
+            margin: 50px;
+            height: 400px;
+            width: 300px;
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="fixed">this div is position fixed</div>
+    <div id="sticky-container">
+        <div id="sticky">this div is position sticky</div>
+    </div>
+    <div id="relative">
+
+        <div id="absolute">this div is position absolute</div>
+        <div id="absolute1">this div is position absolute</div>
+        <div id="absolute2">this div is position absolute</div>
+
+    </div>
+    <div id="spacer"></div>
+</body>
+
+</html>

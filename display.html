@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inline-block {
+            display: inline-block;
+            border: 2px solid;
+            margin: 50px;
+            padding: 20px;
+        }
+
+        .h {
+            /* display: inline-block; */
+            border: 2px solid;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            /* display: none; */
+            /* flex-wrap: wrap; */
+            background-color: rgb(29, 184, 132);
+        }
+
+        .one {
+            background-color: blue;
+            display: initial;
+        }
+
+        .two {
+            background-color: rgb(56, 56, 245);
+        }
+
+        span {
+            background-color: red;
+            display: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="inline-block">this is a box</div>
+    <div class="inline-block">also a nice box</div>
+    <div class="container">
+        <h1 class="h">heading1</h1>
+        <h2 class="h">heading2</h2>
+        <h3 class="h">heading3</h3>
+        <h4 class="h">heading4</h4>
+        <h5 class="h">heading5</h5>
+        <h6 class="h">heading6</h6>
+    </div>
+
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum consectetur, reprehenderit dolorum
+        quae id, voluptate ipsam laudantium minus qui, <span>ipsa fugit</span> explicabo? In tempora commodi
+        perspiciatis a<span> adipisci possimus?</span></p>
+
+
+    <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum consectetur, reprehenderit dolorum
+        quae id, voluptate ipsam laudantium minus qui, ipsa fugit explicabo? In tempora commodi perspiciatis a adipisci
+        possimus?</p>
+
+</body>
+
+</html>

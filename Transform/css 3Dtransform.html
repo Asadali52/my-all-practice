@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transform</title>
+    <style>
+        body{
+            display: flex;
+            /* flex-wrap: wrap; */
+            gap: 30px;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(1, 1, 65);
+        }
+        .rotateX{
+            background-color: rgb(255, 153, 0);
+            font-size: 50px;
+            width: 170px;
+            height: 170px;
+            transform: rotateX(80deg);
+        }
+        .rotateY{
+            background-color: rgb(255, 153, 0);
+            font-size: 50px;
+            width: 170px;
+            height: 170px;
+            transform: rotateY(80deg);
+        }
+        .rotateZ{
+            background-color: rgb(255, 153, 0);
+            font-size: 50px;
+            width: 170px;
+            height: 170px;
+            transform: rotateZ(50deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS 3D Transform</h1>
+    <div class="container">
+        <div class="rotateX">Box</div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="rotateY">Box</div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="rotateZ">Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1{
+            display: flex;
+            gap: 30px;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            border: 2px solid brown;
+        }
+        .box{
+            background-color: black;
+            width: 60px;
+            height: 60px;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+            animation-direction: reverse;
+            animation-play-state: paused;
+        }
+        .box:hover{
+            animation-play-state: running;
+        }
+        @keyframes example {
+            0%{ margin-left: 0;
+                margin-top: 0;
+            }            
+            25%{
+                margin-left: 240px;
+                margin-top: 0;
+            }
+            50%{
+                margin-top: 240px;
+                margin-left: 240px;
+            }
+            75%{
+                margin-left: 0;
+                margin-top: 240px;
+            }
+            90%{
+                background-color: green;
+            }
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: asad;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+            animation-direction: alternate;
+            animation-fill-mode: backwards;
+        }
+        @keyframes asad {
+            0%{
+                background-color: rgb(22, 24, 24);
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background-color: blue;
+                left: 200px;
+                top: 0;
+            }
+            50%{
+                background-color: blueviolet;
+                top: 200px;
+                left: 200px;
+            }
+            75%{
+                background-color: black;
+                top: 200px;
+                left: 0;
+            }
+            100%{
+                background-color: greenyellow;
+                top: 0;
+                left: 0;
+            }
+        }
+        .box2{
+            width: 120px;
+            height: 120px;
+            position: relative;
+            background-color: teal;
+            animation-name: ali;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-out;
+        }
+        @keyframes ali {
+            0%{
+                /* transform: rotate(180deg); */
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 130px;
+                background-color: cadetblue;
+            }
+            50%{
+                border-radius: 50%;
+                top: 180px;
+                left: 130px;
+            }
+            75%{
+                left: 0;
+                top: 180px;
+                transform: translate(50px);
+            }
+            100%{
+                background-color: aqua;
+                top: 0;
+                left: 0;
+            }
+
+        }
+        .item{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            font-weight: bold;
+            position: relative;
+            animation-name: timing-function;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .box-1{
+            animation-timing-function: linear;
+        }
+        .box-2{
+            animation-timing-function: ease;
+        }
+        .box-3{
+            animation-timing-function: ease-in;
+        }
+        .box-4{
+            animation-timing-function: ease-out;
+        }
+        .box-5{
+            animation-timing-function: ease-in-out
+        }
+
+        @keyframes timing-function {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 300px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        
+    <div class="container">
+        animation-play-state
+        <div class="box"></div>
+    </div>
+
+    <div class="container">
+        animation-fill-mode
+    <div class="box1"></div>
+    </div>
+
+    <div class="container">
+        <div class="box2"></div>
+    </div>
+    </div>
+
+
+    <div class="item box-1">Linear</div>
+    <div class="item box-2">ease</div>
+    <div class="item box-3">ease in</div>
+    <div class="item box-4">ease out</div>
+    <div class="item box-5">ease in out</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>active horizontal nav bar</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid white;
+        }
+        li:last-child{
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            padding: 10px 18px;
+            color: white;
+            text-decoration: none;
+           
+        }
+
+        li .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        ul .right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Services</a></li>
+        <li class="right"><a href="#">About</a></li>
+    </ul>
+</body>
+
+</html>

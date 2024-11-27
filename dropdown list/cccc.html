@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            overflow: hidden;
+            list-style: none;
+            width: 100%;
+        }
+        li{
+            float: left;
+            padding: 10px 15px;
+
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        li > a:hover{
+            background-color: black;
+            color: #fff;
+        }
+        .dropdown a {
+            display: block;
+        }
+
+        .dropdown{
+            display: none;
+            position: absolute;
+        }
+        .dropdown-content:hover .dropdown{
+            display: block;
+            background-color: aqua;
+            border: 2px solid black;
+            border-top: none;
+            min-width: 100px;
+            padding: 10px 15px;
+            top: 40px;
+
+        }
+
+       
+        
+    </style>
+</head>
+
+<body>
+    <div id="dropdown">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Address</a></li>
+
+            <li class="dropdown-content">
+                <a href="#">Menu</a>
+
+                <div class="dropdown">
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="#">JAVA</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

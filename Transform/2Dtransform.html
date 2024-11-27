@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transform</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+        }
+        .scale{
+            font-size: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 180px;
+            width: 180px;
+            background-color: red;
+            transform: scale(1.5, 2);
+        }
+        .container1{
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+        }
+        .translate{
+            width: 160px;
+            height: 160px;
+            background-color: blueviolet;
+            font-size: 60px;
+            transform: translate(100px, -20px);
+
+        }
+        .container2{
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+            margin-left: 200px;
+        }
+        .rotate{
+            width: 180px;
+            height: 180px;
+            background-color: yellowgreen;
+            font-size: 60px;
+            margin: 30px;
+        }
+        .rotate1{
+            transform: rotate(120deg);
+        }
+        .rotate2{
+            transform: rotateY(-80deg);
+            background-color: green;
+        }
+        .container3{
+            background-color: lightblue;
+            width: 400px;
+            height: 400px;
+            margin-left: 50px;
+        }
+        .skew{
+            background-color: blue;
+            color: aliceblue;
+            font-size: 60px;
+            width: 200px;
+            height: 200px;
+            transform: skew(20deg, -40deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>SCALE</h1>
+    <div class="container">
+        <div class="scale">Box</div>
+    </div>
+    <hr>
+    <h1>TRANSLATE</h1>
+    <div class="container1">
+        <div class="translate">Box
+        </div>
+    </div>
+    <hr>
+    <h1>ROTATE</h1>
+    <div class="container2">
+        <div class="rotate rotate1">Box</div>
+        <div class="rotate rotate2">Box</div>
+    </div>
+    <hr>
+    <h1>SKEW</h1>
+    <div class="container3">
+        <div class="skew">Box</div>
+    </div>
+</body>
+</html>

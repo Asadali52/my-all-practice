@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 410px;
+    width: 410px;
+    border: 3px solid black;
+    border-radius: 250px;
+    position: relative;
+    transition: transform 5s linear;
+}
+
+.container:hover {
+    transform: rotate(360deg);
+}
+
+.items {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    background-color: green;
+    bottom: 50px;
+}
+
+.red {
+    background-color: red;
+    right: 100px;
+    bottom: -20px;
+}
+
+.blue {
+    background-color: blue;
+    /* left: 20px; */
+    top: 60px;
+
+}
+
+.aqua {
+    background-color: aqua;
+    top: -30px;
+    right: 120px;
+}
+
+.gray {
+    background-color: gray;
+    right: -40px;
+    bottom: 190px;
+}
+
+i{
+    font-size: 30px;
+    color: white;
+}
+
+.textarea {
+    position: absolute;
+    /* top: 50px; */
+    /* height: 300px; */
+    height: 410px;
+    width: 410px;
+    border-radius: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 5s linear;
+
+}
+.container:hover .textarea{
+    transform: rotate(-360deg);
+}
+
+.textarea h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textarea p {
+    padding: 0 50px;
+    margin-top: 20px;
+    word-spacing: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.textarea input[type=button] {
+    width: 80px;
+    padding: 10px 22px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}

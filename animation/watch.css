@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: teal;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 200px;
+    width: 200px;
+    background-color: teal;
+    box-shadow: 2px 2px 5px white , -2px -2px 5px white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    color: white;
+    /* background-color: black; */
+    font-weight: bold;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.box1{
+    right: 22%;
+    top: 10%;
+}
+.box2{
+    right: 10%;
+    top: 25%;
+}
+.box3{
+    top: 45%;
+    right:6%;
+}
+.box4{
+    top: 63%;
+    right: 10%;
+}
+.box5{
+    bottom: 10%;
+    right: 24%;
+}
+.box6{
+    bottom: 3%;
+    left: 45%;
+}
+.box7{
+    bottom: 10%;
+    left: 24%;
+}
+.box8{
+    top: 63%;
+    left: 10%;
+}
+.box9{
+    top: 45%;
+    left: 6%;
+}
+.box10{
+    left: 10%;
+    top: 25%;
+}
+.box11{
+    left: 22%;
+    top: 10%;
+}
+.box12{
+    left: 45%;
+    top: 3%;
+}
+.box13{
+    height: 7px;
+    width: 70px;
+    /* background-color: black; */
+    position: absolute;
+    right: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+@keyframes hours {
+    0%{
+        transform: rotate(0deg);
+        transform-origin:20% from right;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin:20% from right;
+    }   
+}
+.box14{
+    height: 7px;
+    width: 80px;
+    /* background-color: gray; */
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 40%;
+}
+@keyframes minutes {
+    0%{
+        transform: rotate(360deg);
+    }
+    
+}
+.box15{
+    width: 90px;
+    height: 7px;
+    background-color: red;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 40%;
+    animation: seconds 60s linear infinite;
+    transform-origin: left center;
+}
+@keyframes seconds {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+.box16{
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+

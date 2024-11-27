@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psecudo class and elements</title>
+    <style>
+        p::first-line{
+            color: rgb(0, 2, 128);
+            background-color: gray;
+        }
+
+        
+        a:visited{
+            background-color: aqua;
+            color: red;
+        }
+
+        a:hover{
+            background-color: red;
+            color: wheat;
+        }
+
+        a:active{
+            background-color: green;
+            color: gray;
+        }
+
+        ul li:first-child{
+            background-color: red;
+        }
+        .list li:nth-child(even){
+            background-color: grey;
+        }
+
+        ::selection{
+            background-color: red;
+            color: gold;
+        }
+
+        h1::first-letter{
+            color: gold;
+            background-color: black;
+            font-size: 50px;
+        }
+
+        h3::before{
+            content:'*/*';
+            color: red;
+        }
+
+        h3::after{
+            content:'++++++++';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium temporibus repudiandae aspernatur repellendus harum quod ea eaque nobis corporis non molestias illo ex facere numquam animi nihil veniam quisquam, nesciunt eveniet suscipit minus quo labore, delectus adipisci! Ipsam corporis est unde quaerat porro qui, quis incidunt, magnam ut, nulla aut.</P>
+
+    <a href="#">click on me</a>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+    </ul>
+
+    <ul class="list">
+        <li>one 1</li>
+        <li>two 2</li>
+        <li>three 3</li>
+        <li>four 4</li>
+        <li>five 5</li>
+        <li>six 6</li>
+    </ul>
+
+    <h1>First letter</h1>
+
+    <h3>This is the main content</h3>
+</body>
+</html>
